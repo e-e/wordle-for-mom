@@ -24,8 +24,8 @@ export const GuessLetter = ({
         alignItems: "center",
         justifyContent: "center",
         fontSize: "2em",
-        width: "20vw",
-        height: "20vw",
+        width: "15vw",
+        height: "15vw",
       }}
     >
       {letter}

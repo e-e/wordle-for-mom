@@ -36,6 +36,8 @@ export const GuessRow = ({ index, word, isSubmitted }: GuessRowProps) => {
       style={{
         display: "flex",
         flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "center",
         width: "90vw",
         gap: "2px",
         marginBottom: "2px",
