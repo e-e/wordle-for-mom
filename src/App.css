@@ -29,6 +29,7 @@
 }
 
 .guessed-letter {
+    background-color: white;
   font-weight: bolder;
   color: #797c7f;
 }

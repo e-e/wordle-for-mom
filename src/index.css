@@ -7,6 +7,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: clip;
+  background-image: url("../public/mom2.png"), url("../public/mom-3.png");
+  background-size: 20%;
+  background-repeat: no-repeat;
+  background-position: top right, top left;
 }
 
 code {
