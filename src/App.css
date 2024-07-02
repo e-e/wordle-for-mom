@@ -108,8 +108,3 @@
     cursor: pointer;
 }
 
-@media screen {
-    .App {
-        max-width: 50vw;
-    }
-}
