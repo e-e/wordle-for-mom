@@ -14,25 +14,95 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.invisible {
+  visibility: hidden;
+}
+.visible {
+  visibility: visible;
+}
+
+.guessed-letter {
+  font-weight: bolder;
+  color: #797c7f;
+}
+.guessed-letter.guessed {
+  color: white;
+}
+
+.guessed-letter.incorrect {
+  background-color: #797c7f;
+}
+.guessed-letter.correct {
+  background-color: #c9b563;
+}
+.guessed-letter.correct-exact {
+  background-color: #6daa6b;
+}
+
+.keyboard-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+.keyboard-row:not(:last-child) {
+    margin-bottom: 2px;
+
+}
+
+.keyboard-key {
+    width: 9vw;
+    height: 9vw;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 0.9em;
+    border: none;
+}
+.keyboard-key.entr {
+  font-size: 0.6em;
+}
+.keyboard-key.del {
+    font-size: 0.8em;
+}
+
+.key-incorrect {
+  background-color: #797c7f;
+    color: white;
+}
+.key-correct {
+  background-color: #c9b563;
+    color: white;
+}
+.key-correct-exact {
+  background-color: #6daa6b;
+    color: white;
+}
+
+.lose-msg, .win-msg {
+    font-size: 2em;
+    font-weight: bolder;
+}
+.lose-msg {
+    color: indianred;
+}
+.win-msg {
+  color: #6daa6b;
+}
+
+.start-button {
+    background-color: #6daa6b;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.5em;
+    cursor: pointer;
 }
