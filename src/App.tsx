@@ -64,7 +64,12 @@ function App() {
         )}
 
         {state === "won" && <div className={"win-msg"}>you won</div>}
-        {state === "lost" && <div className={"lose-msg"}>you lost</div>}
+        {state === "lost" && (
+          <div style={{ marginTop: "20px" }}>
+            <div className={"lose-msg"}>you lost</div>
+            <div>(the word was {targetWord})</div>
+          </div>
+        )}
       </main>
     </div>
   );
